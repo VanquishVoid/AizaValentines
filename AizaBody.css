@@ -1,0 +1,104 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: #fbe4d8;
+    color: #6b3e26;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #8d4f3d;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.yes {
+    background: #ff69b4;
+    color: white;
+}
+
+.yes:hover {
+    background: #ff3b89;
+}
+
+.no {
+    background: #6b3e26;
+    color: white;
+}
+
+.no:hover {
+    background: #8d4f3d;
+}
+
+.next {
+    background: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.next:hover {
+    background: #ff3b89;
+}
+
+/* Floating hearts animation */
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 82%, 18% 100%, 0% 38%);
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}

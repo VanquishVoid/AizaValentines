@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter to You ❤️</title>
+    <link rel="stylesheet" href="Aiza.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To My Lovey Aiza,</h1>
+        <p>Hello ganda this is for youuuu! kahit malayo ikaw love na love kitaaa so much!💖</p>
+        <p>You are my world, my happiness, and my EVERYTHING 🌍 </p>
+        <p>Happy 2nd Valentine’s my loveyyyyyy and I can’t wait for our 1st anniversary this coming march 11 hehe! 🌸</p>
+        <p>Even though dii us magkasama this valentine, my heart is always with you from the start. 💞</p>
+        <button class="btn play-music" onclick="playMusic()">💖 Play Our Song 🎶</button>
+        <audio id="bg-music">
+            <source src="C:/Users/User/Downloads/always.mp3" type="audio/mpeg">
+            
+        </audio>
+    
+        <style>
+            /* Play Button Styling */
+            .play-music {
+                background: #ff69b4;
+                color: white;
+                padding: 15px 30px;
+                font-size: 1.5rem;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: 0.3s;
+                font-family: 'Pacifico', cursive;
+            }
+        
+            .play-music:hover {
+                background: #ff3b89;
+                transform: scale(1.1);
+            }
+        </style>
+        
+        <!-- 🎵 JavaScript to Play Audio -->
+        <script>
+            function playMusic() {
+                const music = document.getElementById('bg-music');
+                music.play();
+            }
+        </script>
+        
+
+    </div>
+    <script>
+        const hearts = document.createElement('div');
+        hearts.classList.add('hearts');
+        document.body.appendChild(hearts);
+        setInterval(() => {
+            let heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+            hearts.appendChild(heart);
+            setTimeout(() => { heart.remove(); }, 5000);
+        }, 300);
+    </script>
+</body>
+</html>

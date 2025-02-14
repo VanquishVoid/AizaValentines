@@ -1,0 +1,54 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: #fbe4d8; /* Soft pink */
+    color: #6b3e26;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes {
+    background: #ff69b4;
+    color: white;
+}
+
+.yes:hover {
+    background: #ff3b89;
+}
+
+.no {
+    background: #6b3e26;
+    color: white;
+    position: absolute;
+}
+
+.no:hover {
+    background: #8d4f3d;
+}

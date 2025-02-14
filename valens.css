@@ -1,0 +1,41 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background: #ffdde1; /* Light romantic pink */
+    color: #a73f3f;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.8rem;
+    color: #b22222;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ff69b4;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff3b89;
+}
